@@ -3,7 +3,8 @@ from django.http import HttpResponse
 import numpy as np
 import pandas as pd
 # Create your views here.
-from sklearn.externals import joblib
+#from sklearn.externals import joblib
+import joblib
 
 classifier=joblib.load('./models/LiverModel.pkl')
 
